@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Cousine);
+
+body	{
+	background-color: white;
+}
+
+
+h1	{
+	font-family: 'Cousine', monospace;
+	font-weight: normal;
+	font-size: 27px;
+	color: black;
+	padding: 20px 35px 0px;
+	margin: 0;
+}
+
+
+h1:hover{
+	color: cornflowerblue;
+	text-decoration: none;
+  	webkit-transition: color 500ms;
+   	moz-transition:    color 500ms;
+   	ms-transition:     color 500ms;
+  	o-transition:      color 500ms;
+  	transition:        color 500ms;
+}
+
+
+h2	{
+	font-family: Courier New, 'Cousine', monospace;
+	font-weight: normal;
+	font-size: 16px;
+	color: black;
+	padding: 0px 35px 5px;
+	margin: 0;
+}
+
+
+h3	{
+	font-family: 'Cousine', monospace;
+	font-size: 15px;
+	font-weight: lighter;
+	text-decoration: none;
+	line-height: 24px;
+	color: #2e302f;	
+	padding: 0px;
+	margin: 0;
+}
+
+h4	{
+	font-family: Courier New, 'Cousine', monospace;
+	font-weight: normal;
+	font-size: 16px;
+	color: white;
+	padding: 10 0 10 0;
+	margin: 0;
+}
+
+
+h5	{
+	font-family: monospace;
+	font-size: 11px;
+	font-weight: lighter;
+	text-decoration: none;
+	line-height: 15px;
+	color: black;	
+	padding: 0px;
+	margin-top: 15px;
+
+}
+
+
+p	{
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: lighter;
+	line-height: 15px;
+	color: #2e302f;	
+	padding: 0px;
+	margin: 0;
+}
+
+
+div	{
+	padding: 10px 35px 10px;
+}
+
+
+a	{
+		color: white;
+	background-color: black;
+	text-decoration: none;
+	webkit-transition: color 500ms;
+   	moz-transition:    color 500ms;
+   	ms-transition:     color 500ms;
+  	o-transition:      color 500ms;
+  	transition:        color 500ms;
+}
+
+
+a:link, a:visited {
+	color: white;
+	background-color: black;
+	text-decoration: none;
+  	webkit-transition: color 500ms;
+   	moz-transition:    color 500ms;
+   	ms-transition:     color 500ms;
+  	o-transition:      color 500ms;
+  	transition:        color 500ms;
+}
+
+
+a:hover, a:active {
+	color: coral;
+	background-color: white;
+}
+
+
+ul	{
+	text-decoration: none;
+	
+}
+
+
+ul.a	{
+	font-family: 'Cousine', monospace;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 12px 10px;
+	font-size: 20px;
+}	
+
+
+li	{
+	font-family: monospace;
+	text-decoration: underline;
+	list-style-type: square;
+	line-height: 18px;
+	
+}
+
+
+li.a	{
+	display: inline-block;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 67px;
+  font-weight: bold;
+  position: relative;
+  top: 7px;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: coral;
+  color: white;
+}
+
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  
+}
+
+.active, .collapsible:hover {
+  color: cornflowerblue;
+}
+
+.content {
+  font-family: monospace;
+  padding: 0px 85px 0px;
+  max-height: 0;
+  width: 100vw;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f2f2f2;
+  color: black;
+  margin-left: -85px;
+  -webkit-box-shadow: inset  0px 8px 8px -10px #d9d9d9;
+    -moz-box-shadow:    inset  0px 8px 8px -10px #d9d9d9; 
+    box-shadow:         inset  0px 8px 8px -10px #d9d9d9;
+  
+}
+
+
+
