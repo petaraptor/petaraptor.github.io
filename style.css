@@ -165,6 +165,8 @@ li	{
 	text-decoration: underline;
 	list-style-type: square;
 	line-height: 18px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	
 }
 
@@ -173,8 +175,8 @@ li.a	{
 	display: block;
 	align-items: flex-end;
 	float: left;
-	margin-right: 0.3em;
-	padding-right: 0;
+	margin-right: 0.1em;
+	padding-right: 0.3em;
 	padding-bottom: 5px;
 	text-decoration: none;
 	text-align: center
@@ -212,7 +214,7 @@ nav {
   position: fixed;
   bottom: 0;
   background-color: #fefefe;
-  width: auto;
+  width: 100vw;
 	height: auto;
   padding: 0;
   margin: 0;
