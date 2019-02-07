@@ -123,6 +123,8 @@ div	{
 a	{
 		color: white;
 	background-color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-decoration: none;
 	webkit-transition: color 500ms;
    	moz-transition:    color 500ms;
@@ -149,6 +151,18 @@ a:hover, a:active {
 	background-color: white;
 }
 
+.b {
+  margin-right: 0.1em;
+	padding-right: 0.3em;
+	text-decoration: none;
+}
+
+.c {
+	background-color: white;
+	color: black;
+	padding-top: 0;
+	padding-bottom: 0;
+}
 
 ul	{
 	text-decoration: none;
