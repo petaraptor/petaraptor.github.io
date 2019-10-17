@@ -1,0 +1,58 @@
+body	{
+	background-color: steelblue;
+}
+
+
+h1	{
+	font-family: 'Cousine', monospace;
+	font-weight: normal;
+	font-size: 16px;
+	color: white;
+	padding: 50px 30px 5px;
+}
+
+
+p	{
+	font-family: 'Cousine', monospace;
+	font-size: 14px;
+	font-weight: normal;
+	color: peachpuff;
+}
+
+
+div	{
+	padding: 10px 30px 10px;
+}
+
+
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+  	webkit-transition: color 1s;
+   	moz-transition:    color 1s;
+   	ms-transition:     color 1s;
+  	o-transition:      color 1s;
+  	transition:        color 1s;
+}
+
+
+a:hover, a:active {
+	color: red;
+}
+
+
+ul.a	{
+	font-family: 'Cousine', monospace;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 30px 10px;
+	font-size: 18px;
+}	
+
+
+li	{
+	display: inline-block;
+	padding-right: 35px;
+}
+
+

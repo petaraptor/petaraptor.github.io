@@ -4,6 +4,7 @@ body	{
 	background-color: white;
 	margin-top:0;
 	margin-left:0;
+	margin-right:0;
   padding-top:0;
 }
 
@@ -20,7 +21,7 @@ h1	{
 	font-weight: normal;
 	font-size: 27px;
 	color: black;
-	padding: 20px 35px 0px;
+	padding: 20px 0px 0px;
 	margin: 0;
 }
 
@@ -41,7 +42,7 @@ h2	{
 	font-weight: normal;
 	font-size: 16px;
 	color: black;
-	padding: 0px 35px 5px;
+	padding: 0px 0px 5px;
 	margin: 0;
 }
 
@@ -101,32 +102,35 @@ p	{
 }
 
 .divider {
-	margin-left:10px;
-	margin-right:10px;
+	width: 100%;
+	margin-left:0;
+	margin-right:0;
 }
 
 
 div	{
-	padding: 10px 35px 10px;
+	padding: 10px 0px 10px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
+
+
 .overlay {
-	position: fixed;
-	width: 100vw;
+	position: absolute;
+	width: 100%
 	overflow-x: hidden;
-	margin: 0;
+	margin-left:5%;
 	padding: 0;
 	background-color: white;
 	top: auto;
-	box-shadow: 0px 5px 15px #ffffff;
+	
 }
 
 .spacer {
 	width: auto;
 	height: 80px;
-	overflow-y: auto;
+	overflow-y: none;
 	overflow-x: hidden;
 }
 
@@ -202,6 +206,7 @@ ul.a	{
 	padding: 0;
 	font-size: 18px;
 	display: inline-flex;
+	overflow: hidden;
 }	
 
 
@@ -232,9 +237,27 @@ nav {
 	width: auto;
 	display: flex;
 	overflow-x: auto;
-	padding-left: 10px;
+	padding-left: 0;
 }
 
+section {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 0;
+	
+}
+
+footer {
+	text-align:float;
+	float:right;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    #writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    transform-origin: center;
+    transform: rotate(180deg);
+	
+}
 
 /* The Modal (background) */
 .modal {
@@ -258,16 +281,16 @@ nav {
 
 .modal-content {
   position: fixed;
-  bottom: 0;
+  bottom: 50%;
   background-color: #fefefe;
-  width: 100%;
+  width: 300px;
 	overflow-x: hidden;
 	height: auto;
   padding: 0;
-  margin: 0;
-  -webkit-animation-name: slideIn;
+  left: 50%; margin-left: -150px;
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
+  animation-name: fadein;
   animation-duration: 0.4s;
 }
 
@@ -280,7 +303,8 @@ nav {
 	text-align: center;
 	line-height: 50%;
   right: 1vw;
-	top: 1vh;
+	top:20px;
+	margin-top: -15px;
 }
 
 .close:hover,
