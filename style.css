@@ -9,12 +9,28 @@ body	{
     padding-top:0;
 }
 
+@media	(min-width: 700px)	{
+	body	{
+		max-width: 700px;
+		width: 98%;
+		margin: 0px auto;
+		text-align: left;
+	}
+}
+
+@media (device-width: 100vw) and (device-height: 100vh) {
+	body {
+		padding-top:5%;
+	}
+	
+}
 
 html {
 	margin-top:0;
 	margin-left:0;
     padding-top:0;
 	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 h1	{
@@ -25,7 +41,6 @@ h1	{
 	padding: 20px 0px 0px;
 	margin: 0;
 }
-
 
 h1:hover{
 	color: cornflowerblue;
@@ -192,7 +207,7 @@ a[href^="mailto"] {
 
 .c:link, .c:visited {
 	color: black;
-	background-color: white;
+	background-color: transparent;
 	text-decoration: none;
   	webkit-transition: color 200ms;
    	moz-transition:    color 200ms;
@@ -203,11 +218,12 @@ a[href^="mailto"] {
 
 .c:hover, .c:active {
 	color: coral;
-	background-color: white;
+	background-color: transparent;
 }
 
 .d {
 	text-decoration: none;
+	background-color: transparent;
 }
 
 ul	{
@@ -264,15 +280,18 @@ section {
 	padding-right: 5%;
 	margin-bottom: 0;
 	padding-bottom: 40px;
+	max-width: 700px;
 	
 }
 
 footer {
 	position:absolute;
 	bottom: 40px;
-	right: 0;
+	left: 0;
+	padding-right:0;
+	margin-right:0;
 	text-align:float;
-	float:right;
+	float:left;
     display: inline-block;
     writing-mode: vertical-lr;
     #writing-mode: vertical-rl;
@@ -414,6 +433,7 @@ footer {
 .work {
 	margin-left: 0;
 	padding-left: 0;
+	padding-right: 2px;
 	padding-bottom: 0;
 	display:inline-block;
     float:left;
@@ -455,5 +475,70 @@ footer {
 	background-image: url(images/iahover.jpg);
 	background-repeat: no-repeat;
 	display: inline-block;
+}
+
+@media (max-width: 537px)	{
+	.iabutton	{
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		transform: rotate(270deg);
+		position: absolute;
+		bottom: -193px;
+		left: calc(5% + 117px);
+	}
+	
+	.overlay	{
+		width:90%;
+		position:absolute;
+		display:inline-block;
+		margin:0 auto;
+		padding-left:5%;
+		text-align:center;
+	}
+	
+
+	ul.a	{
+		width:100%;
+		height:auto;
+		padding:10px;
+		margin:0;
+		display: flex;
+		align-items: flex-star;
+		justify-content: space-between;
+		
+		
+	}
+	
+	li 		{
+		border: 1px;
+		width:33%;
+		
+	}
+	
+	li.d	{
+		width:100%;
+	}
+	
+	a	{
+		width:200px;
+		padding:auto;
+
+	}
+	
+	.spacer		{
+		height:90px;
+	}
+	
+	.lists		{
+		font-size:15px;
+	}
+	
+	a.c			{
+		width:100%;
+	}
+
+		
 }
 
