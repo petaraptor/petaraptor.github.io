@@ -1,18 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Cousine);
 
 body	{
+	position: relative;
 	background-color: white;
 	margin-top:0;
 	margin-left:0;
 	margin-right:0;
-  padding-top:0;
+    padding-top:0;
 }
 
 
 html {
 	margin-top:0;
 	margin-left:0;
-  padding-top:0;
+    padding-top:0;
 	overflow-x: hidden;
 }
 
@@ -165,6 +166,24 @@ a:hover, a:active {
 	background-color: white;
 }
 
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  background-color: inherit;
+  text-decoration: none; /* Remove underline. */
+  padding: 0;
+  margin: 0;
+  /* Additional css `propery: value;` pairs here */
+}
+
+a[href^="mailto"] {
+  color: inherit; /* Inherit text color of parent element. */
+  background-color: inherit;
+  text-decoration: none; /* Remove underline. */
+  padding: 0;
+  margin: 0;
+  /* Additional css `propery: value;` pairs here */
+}
+
 .b {
   margin-right: 0.1em;
 	padding-right: 0.3em;
@@ -244,10 +263,14 @@ section {
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-bottom: 0;
+	padding-bottom: 40px;
 	
 }
 
 footer {
+	position:absolute;
+	bottom: 40px;
+	right: 0;
 	text-align:float;
 	float:right;
     display: inline-block;
@@ -391,6 +414,19 @@ footer {
 .work {
 	margin-left: 0;
 	padding-left: 0;
+	padding-bottom: 0;
+	display:inline-block;
+    float:left;
+}
+
+.lists	{
+	width: 100%;
+	
+}
+
+.music {
+	padding-bottom: 0;
+	
 }
 
 .media {
@@ -405,8 +441,9 @@ footer {
 }
 
 .iabutton:link, .iabutton:visited {
-	width: 150px;
-	height: 450px;
+	width: 116px;
+	height: 350px;
+	padding: 0;
 	background-image: url(images/ia.jpg);
 	background-repeat: no-repeat;
 	background-color: white;
@@ -419,3 +456,4 @@ footer {
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+
