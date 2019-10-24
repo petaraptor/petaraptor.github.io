@@ -41,6 +41,7 @@ h1	{
 	color: black;
 	padding: 20px 0px 0px;
 	margin: 0;
+	text-transform:uppercase;
 }
 
 h1:hover{
@@ -561,6 +562,10 @@ img.resize	{
 	
 	a.c			{
 		width:100%;
+	}
+	
+	html	{
+		overflow-y:hidden;
 	}
 
 		
