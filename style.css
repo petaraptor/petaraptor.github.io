@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cousine);
 
+
 body	{
 	position: relative;
 	background-color: white;
@@ -161,6 +162,7 @@ div.title	{
 a	{
 		color: white;
 	background-color: black;
+	margin:0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-decoration: none;
@@ -306,6 +308,7 @@ footer {
     -ms-writing-mode: tb-rl;
     transform-origin: center;
     transform: rotate(180deg);
+	color:#f2f2f2;
 	
 }
 
@@ -470,7 +473,7 @@ img.resize	{
 }
 
 .article {
-	
+	overflow-y:hidden;
 	
 }
 
@@ -536,7 +539,7 @@ img.resize	{
 	}
 	
 	a	{
-		width:200px;
+		width:190px;
 		padding:auto;
 
 	}
