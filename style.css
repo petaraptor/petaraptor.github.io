@@ -160,12 +160,13 @@ div.title	{
 }
 
 a	{
-		color: white;
+	color: white;
 	background-color: black;
 	margin:0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-decoration: none;
+	text-transform:lowercase;
 	webkit-transition: color 500ms;
    	moz-transition:    color 500ms;
    	ms-transition:     color 500ms;
@@ -213,6 +214,10 @@ a[href^="mailto"] {
   margin-right: 0.1em;
 	padding-right: 0.3em;
 	text-decoration: none;
+}
+
+.c 		{
+	text-transform:none;
 }
 
 .c:link, .c:visited {
