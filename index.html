@@ -1,74 +1,41 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 
 <head>
-	<meta charset=“utf-8”>
+    <meta charset="utf-8">
 
-	<title>Petar Mrdjen - Sound Designer</title>
-	<meta name=“description” content=“Sound Designer and composer for Film, Theatre and Radio”>
-	<meta name=“author” content=“Petar Mrdjen”>
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	
+    <title>Petar Mrdjen</title>
+    <meta name="description" content="Petar Mrdjen">
+    <meta name="author" content="Petar Mrdjen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 
-
-<body>
-<div class=overlay>
-	<a href="index"><h1>PETAR MRDJEN</h1></a>
-	<h2>sound designer.</h2>
-	<hr class="divider">
-
-<nav>
-
-	<ul class=a>
-		<li class=a><a href="about">&nbsp;&nbsp;about&nbsp;&nbsp;</a></li>	
-		<li class=a><a href="work">&nbsp;&nbsp;work&nbsp;&nbsp;</a></li>
-		<li class=a><a id="myBtn">&nbsp;&nbsp;contact&nbsp;&nbsp;</a></li>
-	</ul>
-	
-</nav>
-</div>
-<div class=spacer></div>
-
-<br>
-<section>
-<div><h3>Creating noise since birth.</h3>
-</div>
-<img src="images/Untitled-1optimized.jpg" alt="Tangle" style="width:100%;margin:0;padding:0;"> 
-
-
-</section>
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-		<span class="close">&times;</span>
-    <div class="modal-header">
-			
-      <h4>You can reach me at:</h4>
-    </div>
-    <div class="modal-body">
-      <p>Email: <a href="mailto:mrdjenpetar@gmail.com">mrdjenpetar@gmail.com</a></p>
-      <p>Tel (SWE): <a href="tel:+46-79-336-0568">+46-79-336-0568</a></p>
-    </div>
-    <div class="modal-footer">
-      <h3>Love</h3>
-    </div>
-  </div>
-
-</div>
-
-<script src="scripts.js"></script>
-
-<footer>
-        <small>&copy; Copyright 2023, Petar Mrdjen</small>
-</footer>
-
+<body>   
+    <a id="top"></a>
+    <nav>
+        <ul class="nav">
+            <li id="index" class="nav" style="animation-delay: 1s">petar_mrdjen</li>
+            <li id="index" class="nav" style="animation-delay: 1.7s"><a href="./sound.html">>sound</a></li>
+            <li id="index" class="nav" style="animation-delay: 2s"><a href="./film.html">>film</a></li>
+            <li id="index" class="nav" style="animation-delay: 2.3s"><a href="./about.html">>about</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <video id="splash" width="100%" preload autoplay playsinline loop muted>
+            <source src="./video/soundbodyloop.mp4" type="video/mp4">
+            <source src="./video/soundbodyloop.webm" type="video/webm">
+        </video>
+        <div class="splash">
+            creating noise since birth.
+        </div>
+    </section>
 </body>
-
-
-
 
 </html>
