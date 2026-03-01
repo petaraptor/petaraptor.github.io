@@ -153,12 +153,14 @@
     font-weight: 500;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 1.5rem;
     margin: 0;
+    padding: 0;
     content: 'p';
   }
-  
+
   li.nav {
     flex: 1;
     line-height: 4rem;
@@ -303,6 +305,13 @@ img.laurel {
     nav {
       padding: 0;
     }
+    ul.nav {
+      font-size: 3vh;
+      
+    }
+    li.nav:first-child  {
+    flex: 0 0 100%;
+    }
     div, div.row, div.rev {
       
       padding: 0;
@@ -329,12 +338,6 @@ img.laurel {
     }
     div.expand {
       height: 0vh;
-    }
-    ul.nav {
-      font-size: 3vh;
-      flex-wrap: wrap;
-      flex-direction: column;
-      
     }
     p, p.box {
       text-align: center;
