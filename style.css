@@ -12,6 +12,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    overscroll-behavior-y: none;
   }
   
   body {
